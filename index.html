@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Portfolio Maitena | Home</title>
+	<!--Tipografias-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&family=Titan+One&display=swap" rel="stylesheet">
+    <!-- font icons -->
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<link href="css/all.css" rel="stylesheet">
+	<link href="css/all.min.css">
+	<link href="css/v4-shims.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-abc123" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        			<div class="cambiar-tema ml-3">
+				<button id="btn-dark" type="button" class="btn icon" value="dark" onclick="cambiarTema(this.value)">
+					<i class="fas fa-moon"></i>
+				</button>
+				<button id="btn-light" type="button" class="btn icon" value="light" onclick="cambiarTema(this.value)">
+					<i class="fas fa-sun"></i>
+				</button>
+    		</div>
+		<div class="container">
+            <a href="index.html"><img class="logo" src="imgs/logo.svg" alt="logo" style="padding-left: 50px;"/></a>
+            <ul class="nav" style="text-transform: uppercase;">
+                <li class="item">
+                    <a class="link" href="#home">Etxea</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">Niri Buruz</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#reel">Reel</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#trebetasunak">Trebetasunak</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#kontaktua">Kontaktua</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+				<a id="miBoton" href="#kontaktua" class="btn btn-outline-primary d-none d-lg-block but-nav boton" style="margin-left: 15px;">Kontaktatu</a>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!--  header -->
+	<!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="imgs/bideo-portfolioa-gil-maitena.mp4" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+	    <header class="container-fluid d-flex align-items-center py-5" id="home" style="min-height: 100vh; margin: 0; background-color: var(--primary)">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+				<video autoplay loop muted style="width: 100%;">
+					<source src="imgs/hola.mp4" type="Video/mp4">	
+				</video>
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">Kaixo,</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Maitena</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Diseinatzaile Grafikoa, Artista, Ilustratzaile Bektoriala, Diseinatzaile Korporatiboa, Web Diseinua eta Programatzailea, Marrazkilari Tradizionala, Serigrafia eta Binilo teknikaria, Diseinatzaile Editoriala, Identitate Bisualaren Diseinatzailea, Marrazkilari Digitala, ... </div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <button class="btn-rounded  btn boton-col-tran btn-primary" style="font-size: 1.1em;"><a href="imgs/-CV_Maitena_Gil-.pdf" download="nombre_del_archivo.pdf" target="_blank"><span>Deskargatu CV</span></a></button>
+                        <button type="button" class="btn-play" data-toggle="modal"
+                            data-src="imgs/bideo-portfolioa-gil-maitena.mp4" src="imgs/bideo-portfolioa-gil-maitena.mp4" data-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Bideo</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+	<div class="deg-incio-hea"></div>
+	<div class="deg-incio"></div>
+
+
+    <!-- about section -->
+	<section class="section pt-6" id="about" style="background-color: var(--sec); margin-top: 0;">
+		<div class="container-fluid py-5" >
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+			<div class="container text-center mb-5">
+			<p class="section-subtitle">Nor naiz ni?</p>
+			<h2 class="section-title mb-3">Niri buruz</h2>
+			</div></div>
+            <div class="row align-items-center"><div class="col-5">
+	<video autoplay loop muted style="width: 100%;">
+		<source src="imgs/animación-mascota_logo.mp4" type="Video/mp4">	
+	</video></div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Maitena Gil Alvarez</h3>
+                    <p style="color: var(--dcolor)">Maitena dut izena, eta aurten matrikulatuta nagoen ikasketen zikloa bukatzen ari naiz, aurreinprimaketa digitaleko teknikari gisa espezializatuta.<br>Nire aisialdian, marraztea, gauza berriak ezagutzea eta ikastea, istorioak sortzea eta idaztea gustatzen zait.<br>Nire ametsa animazioaren industrian lan egitea da. Liluratu egiten nau pertsonaia ilustratu, irrealistak edo gizakiak ez direnak bizia emateko eta enpatizatzeko gaitasunak.<br>Eskerrik asko nire portfolio weba bisitatzeagatik! </p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Izena: <span class="text-secondary"><br>Maitena Gil Alvarez</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Jaiotze data: <span class="text-secondary"><br>2006-ko azaroaren 17-a</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Gradua: <span class="text-secondary"><br>CFGS - <em>Abian</em></span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Esperientzia: <span class="text-secondary"><br>Praktika profesionalak</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary"><br>maitena.ga17 @gmail.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary"><br>Eskugarri</span></h6></div>
+                    </div>
+                    <div style="display: flex;">
+					<button class="btn-rounded  btn boton-col-tran btn-primary" style="font-size: 1.1em; margin-right: 23px;"><a href="imgs/-CV_Maitena_Gil-.pdf" download="nombre_del_archivo.pdf" target="_blank"><span>Deskargatu CV</span></a></button>
+					<a href="#kontaktua" class="btn btn-outline-primary mr-4" >Kontaktatu</a>
+                    <a href="" class="btn btn-outline-primary">Gehiago Jakin</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+	<!-------------------Bideo--------------->
+	<section class="bideoa section" style="background-color: var(--sec);" id="reel">
+	<div class="container text-center mb-5">
+	<p class="section-subtitle">Bideoa?</p>
+	<h2 class="section-title mb-3">Nire Reel-a</h2>
+	<video autoplay loop muted>
+		<source src="imgs/bideo-portfolioa-gil-maitena.mp4" type="Video/mp4">	
+	</video>
+		<p style="color: var(--dcolor)">Kaixo! Eskerrik asko nire portfolio bideoa ikusteagatik!<br>
+			Nik After Effects-ekin sortutako 2D portfolioi animatua da.</p>
+	</div>
+
+</section>
+		
+	<!---------------------------------- Trebetasunak -->
+	<section class="section" style="margin: 0; padding-top: 100px;" id="trebetasunak">
+	<div class="container text-center mb-5">
+	<p class="section-subtitle">Zer Egin Dezaket?</p>
+	<h2 class="section-title mb-3">Trebetasunak</h2></div>
+ <div class="row" style="justify-content: center; align-items: center;">
+   <div style="max-width: 75%; display: flex; justify-content: center; align-items: center;" >
+    <div class="row" style="display: flex; justify-content: center; align-items: center;">
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="card shadow-fluid text-center border-0">
+          <div class="position-relative rounded-top progress-wrapper d-none d-md-block" data-color="#FCC47E">
+            <div class="wave" data-progress="89%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title font-w">Ilustrazio Bektoriala<br> (89%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="card shadow-fluid text-center border-0">
+          <div class="position-relative rounded-top progress-wrapper d-none d-md-block" data-color="#95E3F5">
+            <div class="wave" data-progress="73%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title font-w">Diseinu Korporatiboa<br> (73%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="card shadow-fluid text-center border-0">
+          <div class="position-relative rounded-top progress-wrapper d-none d-md-block" data-color="#9F83E6">
+            <div class="wave" data-progress="69%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title font-w">Diseinu Editoriala<br> (69%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="card shadow-fluid text-center border-0">
+          <div class="position-relative rounded-top progress-wrapper d-none d-md-block" data-color="#FFABD2">
+            <div class="wave" data-progress="63%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title font-w">Web Diseinua eta Programazioa<br> (63%)</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <div style="max-width: 75%; display: flex; justify-content: center; align-items: center;">
+    <div class="row" style="display: flex; justify-content: center; align-items: center;">
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="card shadow-fluid text-center border-0">
+          <div class="position-relative rounded-top progress-wrapper d-none d-md-block" data-color="#FFB9A6">
+            <div class="wave" data-progress="59%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title font-w">Marrazketa Tradizionala<br> (55%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="card shadow-fluid text-center border-0">
+          <div class="position-relative rounded-top progress-wrapper d-none d-md-block" data-color="#99E6AF">
+            <div class="wave" data-progress="31%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title font-w">Identitate Bisualaren Diseinua<br> (31%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="card shadow-fluid text-center border-0">
+          <div class="position-relative rounded-top progress-wrapper d-none d-md-block" data-color="#81B1E6">
+            <div class="wave" data-progress="97%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title font-w">Serigrafia eta Binilo<br> (97%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="card shadow-fluid text-center border-0">
+          <div class="position-relative rounded-top progress-wrapper d-none d-md-block" data-color="#F2FF9C">
+            <div class="wave" data-progress="27%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title font-w">Marrazki Digitala<br> (27%)</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+    
+		<!---------------------------------- Software -->
+	<section><div class="container-xxl py-6 pb-5 software">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="display-5 mb-5">Software eta Experientzia</h1>
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h7 class="font-weight-bold" style="letter-spacing: 0.5px">Illustrator</h7>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="background-color: #F4991C" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h7 class="font-weight-bold" style="letter-spacing: 0.5px">Photoshop</h7>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="background-color: #53A0D8" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h7 class="font-weight-bold" style="letter-spacing: 0.5px">Indesign</h7>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="background-color: #E83C69" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h7 class="font-weight-bold" style="letter-spacing: 0.5px">XD</h7>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="background-color: #BF74AE" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h7 class="font-weight-bold" style="letter-spacing: 0.5px">Dreamweaver</h7>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="background-color: #BF74AE" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h7 class="font-weight-bold" style="letter-spacing: 0.5px">Premiere</h7>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="background-color: #9294C9" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h7 class="font-weight-bold" style="letter-spacing: 0.5px">Blender</h7>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="background: linear-gradient(to right, #F19524, #F19524, #F19524, #F19524, #0063A0, #0063A0)" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h7 class="font-weight-bold" style="letter-spacing: 0.5px">After Effects</h7>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="background-color: #9294C9" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+
+					</div>
+                </div>
+                <div class="col-lg-6 wow" data-wow-delay="0.5s">
+                    <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
+                        <li class="nav-item w-50 text-center">
+                            <a class="nav-link w-100 py-3 fs-5 active exp-ik my-font-or" data-bs-toggle="pill" href="#tab-1">Experientzia</a>
+                        </li>
+                        <li class="nav-item w-50 text-center">
+                            <a class="nav-link w-100 py-3 fs-5 exp-ik my-font-or" data-bs-toggle="pill" href="#tab-2">Ikasketak</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content ml-4">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row">
+                                <div style="width: 45%; margin: 5px;margin-bottom: 15px;">
+                                    <h4>ERASMUS | Irlanda</h4>
+                                    <hr class="text-primary my-2 color-c">
+                                    <p class="text-primary mb-1">03/2024 - 06/2024</p>
+                                    <h7 class="mb-0">CFGMren bigarren urteko praktikak<br><em>Konfebask-en beka, Erasmus+</em></h7>
+                                </div>
+                                <div style="width: 45%; margin: 5px; margin-bottom: 15px;">
+                                    <h4>LAINER | Donostia</h4>
+                                    <hr class="text-primary my-2 color-c">
+                                    <p class="text-primary mb-1">03/2023-05/2023</p>
+                                    <h7 class="mb-0">CFGMren lehenengo urteko praktikak<br><em>Poltsa Denda</em></h7>
+                                </div>
+                                <div style=" width: 45%; margin: 5px; margin-bottom: 15px;">
+                                    <h4>COSTA JUMP | Urbil</h4>
+                                    <hr class="text-primary my-2 color-c">
+                                    <p class="text-primary mb-1">09/2023 - 01/2024</p>
+                                    <h7 class="mb-0">Parkeko Monitorea<br><em>CFGMko bigarren maila ikasten bitartean</em></h7>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row">
+                                <div style="max-width: 100%; min-width: 45%; margin: 5px; margin-bottom: 15px;">
+                                    <h4>CEINPRO | Lanbide Heziketako Zentroa</h4>
+                                    <hr class="text-primary my-2 color-c">
+                                    <p class="text-primary mb-1">2022 - 2024</p>
+                                    <h7 class="mb-0">Aurreinprimaketa Digitala<br><em>Maila ertaineko Heziketa Zikloa</em></h7>
+                                </div>
+                                <div style="max-width: 100%; min-width: 45%; margin: 5px; margin-bottom: 15px;">
+                                    <h4>U-TAD | Teknologia eta Arte Digitaleko Unibertsitate Zentroa <br><em style="font-size: 0.8em;">*Hurrengo Ikasturtean*</em></h4>
+                                    <hr class="text-primary my-2 color-c">
+                                    <p class="text-primary mb-1">2024 - 2026</p>
+                                    <h7 class="mb-0">3D animazio-jokoak eta ingurune interaktiboak<br><em>Goi Mailako Gradu Zikloa</em></h7>
+                                </div>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	</section>
+	
+    <!--portfolio-section-->
+    <section class="section" style="background-color: var(--sec);" id="portfolio">
+        <div class="container text-center">
+            <p class="section-subtitle">Nire proiektuak?</p>
+            <h6 class="section-title mb-6">Portfolioa</h6>
+            <div class="row mb-5">
+                <div class="col-md-6 col-lg-3">
+                    <a href="proyecto-lainer.html" class="portfolio-card">
+                        <img src="imgs/port-lainer.webp" class="portfolio-card-img"
+                            alt="proiekto Lainer">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Lainer</h4>
+                                    <p class="font-weight-normal">Kategoria: Katalogo Diseinua</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="proyecto-ekialde.html" class="portfolio-card">
+                        <img src="imgs/port-ekialde.webp" class="portfolio-card-img img-responsive rounded"
+                            alt="proiekto Ekialde">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Ekialde</h4>
+                                    <p class="font-weight-normal">Kategoria: Diseinu Korporatiboa</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="proyecto-ikon.html" class="portfolio-card">
+                        <img src="imgs/port-icono.webp" class="portfolio-card-img img-responsive rounded"
+                            alt="proiekto Ikonoak">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Ikonoak</h4>
+                                    <p class="font-weight-normal">Kategoria: Ilustrazio Bektoriala</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="proyecto-gal.html" class="portfolio-card">
+                        <img src="imgs/port-galeria.webp" class="portfolio-card-img img-responsive rounded"
+                            alt="proiekto galeria">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Galeria</h4>
+                                    <p class="font-weight-normal">Kategoria: Marrazki tradizionalak</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+
+    <!-- section nirekin lan egin nahi duzu?-->
+    <section class="section-sm bg-primary">
+        <div class="container text-center text-sm-left">
+            <div class="row align-items-center">
+                <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                    <h6 class="title text-light">Nirekin lan egin nahi?</h6>
+                    <p class="m-0 text-light">Anima Zaitez Nirekin Harremanetan<br>Jartzeko eta Kontratatzeko</p>
+                </div>
+                <div class="col-sm offset-sm-2 offset-md-3">
+                    <a href="#kontaktua" class=""><button class="btn btn-lg my-font btn-light rounded bn-f" >Kontaktatu Nazazu</button></a>
+                </div>
+            </div> 
+        </div> 
+    </section> 
+
+    <!-- testimonial section -->
+    <section class="section" id="testmonial" style="background-color: var(--sec);">
+        <div class="container text-center">
+            <p class="section-subtitle">Zer Pentsatzen Dute Nire Kideek Nitaz?</p>
+            <h6 class="section-title mb-6">Testigantzak</h6>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-img-holder">
+                            <img src="imgs/lainer.jpg" class="testimonial-card-img"
+                                alt="proyecto ">
+                        </div>
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle">
+							Maitena Gil Alvarezek lanerako gaitasun eta prestasun handia erakutsi zuen, eta erabakitzailea izan zen, ekimena izan zuen eta diseinuaren arloan ezagutza handia izan zuen.<br>Balio handiko neska da, oso kontuan hartzekoa.</p>
+                            <div style="display: flex; justify-content: space-between;  align-items: flex-end;"><h6 class="testimonial-card-title">Eva Seminario <em style="font-size: 0.6em;">-Lainer</em></h6> 	
+							<div>
+								<div class="dropdown btn btn-outline-primary btn-sm"  style="height: 30px">
+								  <label for="testigantza-1" class="dropbtn">▼</label>
+								  <input type="checkbox" id="testigantza-1">
+								  <div class="dropdown-content">
+									<a href="imgs/-Carta_Maitena-Gil_Eva-Seminario_Lainer.pdf" download="-Carta_Maitena-Gil_Eva-Seminario_Lainer.pdf" target="_blank"><span>Gutun Osoa</span></a>
+								  </div>
+								</div></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-img-holder">
+                            <img src="imgs/ceinpro.jpg" class="testimonial-card-img"
+                                alt="proyecto ">
+                        </div>
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle">Maitena ikasle ona baino gehiago da; 10eko ikaslea da!<br>Ziur nago bere dedikazioak eta trebetasunek hurrengo proiektuan nabarmenduko dutela.</p>
+                            <div style="display: flex; justify-content: space-between;  align-items: flex-end;"><h6 class="testimonial-card-title">Estíbaliz Manso <em style="font-size: 0.6em;">-Ceinpro</em></h6> 	
+							<div>
+								<div class="dropdown btn btn-outline-primary btn-sm"  style="height: 30px">
+								  <label for="testigantza-2" class="dropbtn">▼</label>
+								  <input type="checkbox" id="testigantza-2">
+								  <div class="dropdown-content">
+									<a href="imgs/-Carta_Maitena-Gi_Estíbaliz-Manso_Ceinpro_Profesorado.pdf" download="-Carta_Maitena-Gi_Estíbaliz-Manso_Ceinpro_Profesorado" target="_blank"><span>Gutun Osoa</span></a>
+								  </div>
+								</div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section> 
+<div class="deg-fin-r"></div>
+
+    <!-- KONTAKTUA section -->
+    <section class="section" id="kontaktua">
+        <div class="container text-center">
+            <p class="section-subtitle">Nola komunika zaitezke?</p>
+            <h6 class="section-title mb-5">Jarri harremanetan</h6>
+            <form action="https://formspree.io/f/xpzvpkqj"  method="POST" class="contact-form col-md-10 col-lg-8 m-auto">
+                <div class="form-row">
+                    <div class="form-group col-12 col-md-6" style="width: 50%;">
+                        <input type="text" size="50" class="form-control" placeholder="Zure Izena" id="nombre" name="nombre"  required>
+                    </div>
+                    <div class="form-group col-12 col-md-6" style="width: 50%;">
+                        <input type="email" id="email"  name="email" class="form-control" placeholder="Email" requried>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea id="mensaje" name="mensaje" rows="6" class="form-control"
+                            placeholder="Zure mezua idatzi ..."></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="Mezua Bidali" class="btn btn-outline-primary rounded">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+	<!--------------------------adios--------------------------->
+
+	<section class="container-fluid d-flex align-items-center py-5" style="min-height: 100vh; margin-bottom: 0; margin-left: -15px;" id="adios">
+			<div id="particles-js"><div class="estrellasdent">
+				<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-7 text-center text-lg-left">
+					<h3 class="text-white font-weight-normal mb-3" style="-webkit-text-stroke: 0.3px #000;">Eskarrikasko, <3 </h3>
+					<h1 class="display-3 text-uppercase text-primary mb-1" style="-webkit-text-stroke: 2px #ffffff;">Maitena</h1>
+					<div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-3">
+					<button class="btn-rounded  btn boton-col-tran btn-primary" style="font-size: 1.1em;"><a href="imgs/-CV_Maitena_Gil-.pdf" download="-CV_Maitena_Gil-.pdf" target="_blank"><span>Deskargatu portfolio fisico</span></a></button>
+					<a href="imgs/-CV_Maitena_Gil-.pdf" download="-CV_Maitena_Gil-.pdf" target="_blank" class="btn btn-outline-primary mr-4"><span>Deskargatu CV</span></a>
+				</div>
+				</div>
+				<div class="col-lg-5 pb-4 pb-lg-0 d-none d-lg-block">
+	<video autoplay loop muted style="width: 100%;">
+		<source src="imgs/chica-tablet.mp4" type="Video/mp4">	
+	</video>
+				</div>
+			</div>
+			</div>
+		</div></div> 
+	</section>
+
+
+    <!-- footer -->
+    <div class="container" >
+        <footer class="footer">
+            <p class="mb-0">Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy; <a
+                    href="#">Maitena Gil Alvarez</a>
+            </p> 
+			<a href="mailto:maitena.ga17@gmail.com?subject=Asunto&body=Hola%20Maitena,%20Me%20pongo%20en%20contacto%20contigo%20por..." target="_blank">maitena.ga17@gmail.com</a>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
+				<a href="javascript:void(0)" class="link"><i class="fa-brands fa-github"></i></a>
+				<a href="javascript:void(0)" class="link"><i class="fa-brands fa-discord"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="fa-solid fa-globe"></i></a>
+				<a href="javascript:void(0)" class="link"><i class="ti-email"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+
+
+<!-- Back to Top ------------------------------> 
+<a href="#" class="boton-flotante back-to-top" id="boton-flotante">⇡</a>
+   
+    <!--   -->
+    <script src="js/lottie.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.affix.js"></script>
+    <script src="js/meyawo.js"></script>
+	<script src="js/jquery.min.js"></script>	
+	<!--  -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/counterup.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+	<script>particlesJS("particles-js", {"particles":{"number":{"value":160,"density":{"enable":true,"value_area":800}},"color":{"value":"#935906"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":1,"random":true,"anim":{"enable":true,"speed":1,"opacity_min":0,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":4,"size_min":0.3,"sync":false}},"line_linked":{"enable":false,"distance":150,"color":"#935906","opacity":0.4,"width":1},"move":{"enable":true,"speed":1,"direction":"none","random":true,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":600}}},"interactivity":{"detect_on":"window","events":{"onhover":{"enable":false,"mode":"grab"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":250,"size":0,"duration":2,"opacity":0,"speed":3},"repulse":{"distance":400,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+</script>
+<!--color de fondo #F7F1FF-->
+	<!--PHP-->
+	<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nombre = $_POST['nombre'];
+    $email = $_POST['email'];
+    $mensaje = $_POST['mensaje'];
+    $destinatario = 'maitena.ga17@gmail.com';
+    $asunto = 'Mensaje del formulario de contacto';
+
+    $contenido = "Nombre: $nombre\n";
+    $contenido .= "Email: $email\n";
+    $contenido .= "Mensaje:\n$mensaje";
+    // Utiliza la función mail() de PHP para enviar el correo
+    mail($destinatario, $asunto, $contenido);
+    // Redirige a una página de confirmación o muestra un mensaje
+    header("Location: confirmacion.html");}
+	?>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>	
+	
+<script src="js/app.js"></script>
+</body>
+
+</html>

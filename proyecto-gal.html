@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Portfolio Maitena | Galeria</title>
+	<!--Tipografias-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&family=Titan+One&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+    <!-- font icons -->
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<link href="css/all.css" rel="stylesheet">
+	<link href="css/v4-shims.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-abc123" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        			<div class="cambiar-tema ml-3">
+				<button id="btn-dark" type="button" class="btn icon" value="dark" onclick="cambiarTema(this.value)">
+					<i class="fas fa-moon"></i>
+				</button>
+				<button id="btn-light" type="button" class="btn icon" value="light" onclick="cambiarTema(this.value)">
+					<i class="fas fa-sun"></i>
+				</button>
+    		</div>
+		<div class="container">
+            <a href="index.html" ><img class="logo" src="imgs/logo.svg" alt="logo" style="padding-left: 50px;"/></a>
+            <ul class="nav" style="text-transform: uppercase;">
+                <li class="item">
+                    <a class="link" href="index.html">Etxea</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="proyecto-lainer.html">01 | Lainer</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="proyecto-ekialde.html">02 | Ekialde</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="proyecto-ikon.html">03 | Ikonoak</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="proyecto-gal.html">04 | Galeria</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+				<a id="miBoton" href="#kontaktua" class="btn btn-outline-primary d-none d-lg-block but-nav boton" style="margin-left: 15px;">Kontaktatu</a>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!--  header -->
+	<!--Waves Container-->
+	<section style="width: 100%; transform: rotate(180deg); position: relative;">
+			<div style="background: var(--primary);">
+			<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+			<defs>
+				<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+			</defs>
+				<g class="parallax">
+					<use xlink:href="#gentle-wave" x="48" y="0" fill="var(--wave7)" />
+					<use xlink:href="#gentle-wave" x="48" y="3" fill="var(--wave5)" />
+					<use xlink:href="#gentle-wave" x="48" y="5" fill="var(--wave3)" />
+					<use xlink:href="#gentle-wave" x="48" y="7" fill="var(--wave10)" />
+				</g>
+			</svg>
+			</div>
+	</section>
+	    <header class="container-fluid d-flex align-items-center py-5" id="home" style="min-height: 65vh; margin: 0; background-color: var(--primary)">
+        <div class="container">
+            <div class="row align-items-center d-flex" style="display: flex; justify-content: center; align-items: center; text-align: center;">
+				<h1 class="animation anim-head-pro display-3 text-uppercase mb-2"  style="-webkit-text-stroke: 2px #ffffff; color: var(--primary); text-align: center;">Marrazki galeria
+				<a class="texto-port" style="align-content: center; justify-content: center;">
+					<ul>
+     				 <li>Marrazketa tradizionala</li>
+    				 <li>Teknika ezberdinak</li>
+				     <li>2022-2024</li>
+					</ul>
+				</a>
+				</h1>
+            </div>
+        </div>
+    </header>
+
+	<div class="deg-incio-hea-wave"></div>
+	
+	
+	<!------------------------------------------texto+img------------------------>
+	<section class="section">
+		<div class="container-fluid py-5" >
+            <div class="row align-items-center" style="align-items: center; justify-content: center;">
+                    <h2 class="section-title m-4">Marrazki galeria</h2>
+                    <p style="color: var(--dcolor); width: 75%; margin: 50px;">Ongi etorri estilo tradizionaleko ilustrazioen galeria esklusibora, hainbat teknika eta material bat egiten duten espaziora, sormenaren eta adierazpen artistikoaren unibertsoari bizia emateko. Bilduma paregabe honetan, akuarelen magia, gouache-aren intentsitatea, arkatzaren eta grafitoaren sotiltasuna, akriliakrilikoaren energia bizia, pastelezko klarion leuntasuna, boligrafoaren doitasuna eta mota ezberdinen aldakortasuna aztertuko dituzu. errotulatzaileak..<br>
+					Artelan bakoitza gure artisten talentuaren eta trebetasunaren lekuko da, ordu asko eman baitituzte beren artisautza lantzen eta teknika tradizionalek eskaintzen dituzten aukera amaigabeak aztertzen. Paisaia iradokitzaileetatik erretratu zehatzetara, ilustrazio narratiboetatik abstrakzio adierazgarrietara, pieza bakoitza emozioen, istorioen eta esperientzia berezien mundu baterako leiho bat da.<br>
+					Galeria honetan, gure ilustrazioen aberastasun bisualean murgiltzera eta hemen aurkituko dituzun estilo, gai eta planteamendu artistikoen aniztasuna arakatzera gonbidatzen zaitugu. Utzi akuarelen fintasunak ametsetako paisaietara garraiatzen zaituena, utzi grafito trazuen indarrak mugiarazten zaitu, eta utzi kolore akrilikoen intentsitateak ikusmen-esperientzia ahaztezin batean inguratzen zaituen.<br>
+					Galeria honetako artelan bakoitza marrazki edo koadro bat baino gehiago da; Giza irudimenari eta sormenari begirako leiho bat da, arteak mugitzeko, inspiratzeko eta eraldatzeko duen gaitasunaren lekuko. Galeria honetako txoko guztiak arakatu eta trazu eta kolore bakoitzaren atzean ezkutatzen den edertasuna eta sakontasuna ezagutzera gonbidatzen zaitugu.<br>
+					Gozatu gure ilustrazio tradizionalen galeriatik eta liluratu artearen magiak bere forma garbienean eta benetakoenean!</p>
+        </div>
+    </div>	
+	</section>
+<section class="height: 5px;" style="background: var(--primary); color: var(--primary);">|</section>
+	<!------------------------------------------------galeria-dibujos----------------------------->
+	 <section class="section gallery">
+        <div class="container">           
+			<div class="patata">
+			  <h1>MARRAZKI GALERIA</h1>
+			  <div class="cta filter">
+			  <a class="all active" data-filter="all" href="#">Lan guztiak</a>
+			  <a class="" data-filter="gouache" href="#">Gouache / Akrilikoa</a>
+			  <a class="" data-filter="akuarela" href="#">Akuarela</a>
+			  <a class="" data-filter="errotulagailuak" href="#">Errotulagailuak</a>
+			</div>
+			<div class="masonry boxes">
+			   <div class="item-2 gallery-item grid-item" data-category="gouache">
+				 <a href="#"><a href="imgs/false miror-1.webp" class="fancybox" rel="ligthbox"><img src="imgs/false miror-1.webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category="errotulagailuak zuribeltza">
+				 <a href="#"><a href="imgs/dibujo (1).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (1).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category="gouache zuribeltza">
+				   <a href="#"><a href="imgs/dibujo (2).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (2).webp" class="zoom img-fluid" alt=""></a></a>
+				</div>
+			   <div class="item-2 gallery-item grid-item" data-category="akuarela">
+				 <a href="#"><a href="imgs/dibujo (3).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (3).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			  <div class="item-2 gallery-item grid-item" data-category="akuarela">
+				<a href="#"><a href="imgs/dibujo (4).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (4).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category="gouache">
+				 <a href="#"><a href="imgs/dibujo (5).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (5).webp" class="zoom img-fluid" alt=""></a></a>
+				</div>
+			   <div class="item-2 gallery-item grid-item" data-category=" zuribeltza">
+				 <a href="#"><a href="imgs/dibujo (6).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (6).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			  <div class="item-2 gallery-item grid-item" data-category="errotulagailuak">
+				<a href="#"><a href="imgs/dibujo (7).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (7).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category="errotulagailuak">
+				 <a href="#"><a href="imgs/dibujo (8).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (8).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category="akuarela errotulagailuak">
+				 <a href="#"><a href="imgs/dibujo (9).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (9).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			  <div class="item-2 gallery-item grid-item" data-category="errotulagailuak">
+				<a href="#"><a href="imgs/dibujo (10).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (10).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category="akuarela">
+				 <a href="#"><a href="imgs/dibujo (11).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (11).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category="akuarela errotulagailuak">
+				 <a href="#"><a href="imgs/dibujo (12).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (12).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category="akuarela errotulagailuak">
+				 <a href="#"><a href="imgs/dibujo (13).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (13).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category="errotulagailuak">
+				 <a href="#"><a href="imgs/dibujo (14).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (14).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category="errotulagailuak">
+				 <a href="#"><a href="imgs/dibujo (15).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (15).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category="akuarela">
+				 <a href="#"><a href="imgs/dibujo (16).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (16).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category="gouache">
+				 <a href="#"><a href="imgs/dibujo (17).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (17).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category="akuarela">
+				 <a href="#"><a href="imgs/dibujo (18).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (18).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category="gouache">
+				 <a href="#"><a href="imgs/dibujo (19).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (19).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category="">
+				 <a href="#"><a href="imgs/dibujo (20).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (20).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category="akuarela">
+				 <a href="#"><a href="imgs/dibujo (21).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (21).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category="akuarela errotulagailuak">
+				 <a href="#"><a href="imgs/dibujo (22).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (22).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category="errotulagailuak">
+				 <a href="#"><a href="imgs/dibujo (23).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (23).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category="gouache">
+				 <a href="#"><a href="imgs/dibujo (24).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (24).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category="gouache">
+				 <a href="#"><a href="imgs/dibujo (25).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (25).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category="gouache zuribeltza">
+				 <a href="#"><a href="imgs/dibujo (26).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (26).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category="gouache zuribeltza">
+				 <a href="#"><a href="imgs/dibujo (27).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (27).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category=" zuribeltza">
+				 <a href="#"><a href="imgs/dibujo (28).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (28).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category=" zuribeltza">
+				 <a href="#"><a href="imgs/dibujo (29).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (29).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			   <div class="item-2 gallery-item grid-item" data-category="errotulagailuak zuribeltza">
+				 <a href="#"><a href="imgs/dibujo (30).webp" class="fancybox" rel="ligthbox"><img src="imgs/dibujo (30).webp" class="zoom img-fluid" alt=""></a></a>
+			  </div>
+			</div></div></div>
+		</section> 	
+    <!--portfolio-section-->
+    <section class="section" style="background-color: var(--sec);" id="portfolio">
+        <div class="container text-center">
+            <p class="section-subtitle">Nire proiektuak?</p>
+            <h6 class="section-title mb-6">Portfolioa</h6>
+            <div class="row mb-5">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <a href="proyecto-lainer.html" class="portfolio-card">
+                        <img src="imgs/port-lainer.webp" class="portfolio-card-img"
+                            alt="proiekto Lainer">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Lainer</h4>
+                                    <p class="font-weight-normal">Kategoria: Katalogo Diseinua</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <a href="proyecto-ekialde.html" class="portfolio-card">
+                        <img src="imgs/port-ekialde.webp" class="portfolio-card-img img-responsive rounded"
+                            alt="proiekto Ekialde">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Ekialde</h4>
+                                    <p class="font-weight-normal">Kategoria: Diseinu Korporatiboa</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <a href="proyecto-ikon.html" class="portfolio-card">
+                        <img src="imgs/port-icono.webp" class="portfolio-card-img img-responsive rounded"
+                            alt="proiekto Ikonoak">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Ikonoak</h4>
+                                    <p class="font-weight-normal">Kategoria: Ilustrazio Bektoriala</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> 
+<div><div class="deg-fin-r"></div><div class="deg-fin"></div></div>
+	
+	<!--------------------------adios--------------------------->
+
+	<section class="container-fluid d-flex align-items-center py-5" style="min-height: 100vh; margin-bottom: 0; margin-left: -15px;" id="adios">
+			<div id="particles-js"><div class="estrellasdent">
+				<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-7 text-center text-lg-left">
+					<h3 class="text-white font-weight-normal mb-3" style="-webkit-text-stroke: 0.3px #000;">Eskarrikasko, <3 </h3>
+					<h1 class="display-3 text-uppercase text-primary mb-1" style="-webkit-text-stroke: 2px #ffffff;">Maitena</h1>
+					<div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-3">
+					<button class="btn-rounded  btn boton-col-tran btn-primary" style="font-size: 1.1em;"><a href="imgs/-CV_Maitena_Gil-.pdf" download="-CV_Maitena_Gil-.pdf" target="_blank"><span>Deskargatu portfolio fisico</span></a></button>
+					<a href="imgs/-CV_Maitena_Gil-.pdf" download="-CV_Maitena_Gil-.pdf" target="_blank" class="btn btn-outline-primary mr-4"><span>Deskargatu CV</span></a>
+				</div>
+				</div>
+				<div class="col-lg-5 pb-4 pb-lg-0 d-none d-lg-block">
+	<video autoplay loop muted style="width: 100%;">
+		<source src="imgs/chica-tablet.mp4" type="Video/mp4">	
+	</video>
+				</div>
+			</div>
+			</div>
+		</div></div> 
+	</section>
+
+
+    <!-- footer -->
+    <div class="container" >
+        <footer class="footer">
+            <p class="mb-0">Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy; <a
+                    href="#">Maitena Gil Alvarez</a>
+            </p> 
+			<a href="mailto:maitena.ga17@gmail.com?subject=Asunto&body=Hola%20Maitena,%20Me%20pongo%20en%20contacto%20contigo%20por..." target="_blank">maitena.ga17@gmail.com</a>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
+				<a href="javascript:void(0)" class="link"><i class="fa-brands fa-github"></i></a>
+				<a href="javascript:void(0)" class="link"><i class="fa-brands fa-discord"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="fa-solid fa-globe"></i></a>
+				<a href="javascript:void(0)" class="link"><i class="ti-email"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+
+
+<!-- Back to Top ------------------------------> 
+<a href="#" class="boton-flotante back-to-top" id="boton-flotante">⇡</a>
+   
+    <script src="js/lottie.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="js/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="js/meyawo.js"></script>
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>	
+
+	
+	<!-- % -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+	<script>$(document).ready(function(){
+  $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+    });
+    
+    $(".zoom").hover(function(){
+		
+		$(this).addClass('transition');
+	}, function(){
+        
+		$(this).removeClass('transition');
+	});
+});</script>
+	<script>particlesJS("particles-js", {"particles":{"number":{"value":160,"density":{"enable":true,"value_area":800}},"color":{"value":"#935906"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":1,"random":true,"anim":{"enable":true,"speed":1,"opacity_min":0,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":4,"size_min":0.3,"sync":false}},"line_linked":{"enable":false,"distance":150,"color":"#935906","opacity":0.4,"width":1},"move":{"enable":true,"speed":1,"direction":"none","random":true,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":600}}},"interactivity":{"detect_on":"window","events":{"onhover":{"enable":false,"mode":"grab"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":250,"size":0,"duration":2,"opacity":0,"speed":3},"repulse":{"distance":400,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+</script>
+<!--color de fondo #F7F1FF-->
+	<!--PHP-->
+	<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nombre = $_POST['nombre'];
+    $email = $_POST['email'];
+    $mensaje = $_POST['mensaje'];
+    $destinatario = 'maitena.ga17@gmail.com';
+    $asunto = 'Mensaje del formulario de contacto';
+
+    $contenido = "Nombre: $nombre\n";
+    $contenido .= "Email: $email\n";
+    $contenido .= "Mensaje:\n$mensaje";
+    // Utiliza la función mail() de PHP para enviar el correo
+    mail($destinatario, $asunto, $contenido);
+    // Redirige a una página de confirmación o muestra un mensaje
+    header("Location: confirmacion.html");}
+	?>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>	
+	
+<script src="js/app.js"></script>
+</body>
+
+</html>
