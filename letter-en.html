@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letter | EN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    /* Estilos Generales */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #392665;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .logo {
+      position: absolute; /* Posiciona el logo de forma absoluta */
+      top: 10px; /* Ajusta el margen superior */
+      right: 10px; /* Ajusta el margen derecho */
+      z-index: 10; /* Asegura que esté encima de otros elementos */
+      filter: drop-shadow(1px 1px 5px #4b367a);
+    }
+
+    h1 {
+      font-size: 4em;
+      font-family: 'Titan One', sans-serif;
+      color: #9b59b6; /* Título morado */
+    }
+
+    .flip-container {
+      perspective: 1000px;
+    }
+
+    .flip-card {
+      width: 60vw;
+      max-width: 800px;
+      height: 60vh;
+      max-height: 600px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 1s;
+    }
+
+    .flip-card .left-container, .flip-card .right-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    /* Frente de la tarjeta */
+    .left-container {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 10% 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Parte trasera de la tarjeta */
+    .right-container {
+      background-color: #f3e5f5;
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 5% 5%;
+    }
+
+    /* Efecto de voltear tarjeta al hacer hover */
+    .flip-container:hover .flip-card {
+      transform: rotateY(180deg);
+    }
+
+    .heading {
+      font-size: 3.5em;
+      font-weight: normal;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .separator {
+      display: block;
+      font-size: 2.3em;
+      margin-bottom: 25px;
+    }
+
+    .intro {
+      line-height: 1.3;
+      font-size: 1.15em;
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-weight: 200;
+      color: #f3e5f5;
+    }
+
+    .meta {
+      color: #747076;
+      text-transform: uppercase;
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.8em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1em;
+    }
+
+    .meta p {
+      margin: 0;
+      line-height: 1.3;
+    }
+
+    .meta span {
+      display: block;
+    }
+
+    .featured-image {
+      padding: 0;
+      text-align: right;
+    }
+
+    .featured-image img {
+      width: 50px;
+    }
+
+    .content {
+      margin-top: 10px;
+      font-family: 'Lora', serif;
+      font-size: 0.9em;
+      text-align: justify;
+    }
+
+    .content:first-letter {
+      font-size: 1.7em;
+      font-weight: bold;
+      float: left;
+      margin: -8px 3px;
+      padding: 0;
+      margin-right: 0;
+    }
+
+    .lead {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .pagination {
+      margin-top: 20px;
+      font-size: 0.8em;
+      text-align: center;
+    }
+
+    /* Estilos de la caja de scroll */
+    .scroll-box {
+      max-height: 250px;  /* Limitar la altura de la caja de scroll */
+      overflow-y: auto; /* Habilitar el scroll vertical */
+      padding-right: 15px; /* Añadir un poco de espacio para la barra de desplazamiento */
+      padding-top: 20px; /* Asegurarse de que no esté pegado a la parte superior */
+    
+      border-radius: 8px; /* Borde redondeado */
+    }
+
+    .scroll-box::-webkit-scrollbar {
+      width: 8px; /* Ancho de la barra de desplazamiento */
+    }
+
+    .scroll-box::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.2); /* Color de la barra de desplazamiento */
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">
+    <a target="_blank" href="letter.html" style="size: 30px;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.89 595.28" width="100" height="100">
+        <g>
+          <g id="Layer_1">
+              <path style="fill: #31234d;" class="cls-1" d="M603.17,512.91c-21.62,1.04-47.06-4.88-72.36-11.75-28.12-7.63-56.35-9.28-84.82-1.72-11.91,3.16-22.53,9.09-33.23,14.82-30.12,16.12-62.58,23.06-96.33,25.5-29.02,2.1-57.52-1.03-85.8-7.34-17.96-4.01-35.25-10.05-52.06-17.36-17.87-7.77-35.4-16.28-51.94-26.72-7.96-5.03-15.09-10.98-21.33-17.96-10.85-12.13-9.49-24.27,3.9-35.38,9.86-8.18,21.42-13.43,33.1-18.34,23.09-9.69,46.89-17.2,71.23-23.04,2.59-.62,5.14-1.4,7.71-2.11,13.5-3.73,21.99-11.68,25-26.06,7.33-35.06,13.64-70.3,20.44-105.46,4.55-23.53,8.7-47.16,16.64-69.92,9.32-26.69,26.99-46.18,50.38-61.3,24.75-16,49.36-32.23,72.31-50.8,15.67-12.68,30.84-25.97,45.48-39.8,19.16-18.11,42.08-22.8,67.1-19.75,30.69,3.74,56.13,17.75,78.49,39.19,34.08,32.66,51.76,73.19,58.58,118.66,3.96,26.43-5.92,49.77-23.74,69.58-15.4,17.11-35.1,23.93-57.64,23.79-1.16,0-2.34-.03-3.49-.22-2.68-.43-5.44-1.05-6.52-3.9-1.06-2.8,1.02-4.72,2.64-6.58,5.61-6.45,12.07-12.19,19.19-16.67,19.99-12.57,26.02-31.72,27.48-53.65,1.02-15.28-6.47-25.54-18.73-32.71-23.7-13.85-52.51-9.11-71.1,11.13-5.43,5.91-8.98,12.88-10.8,20.59-3.47,14.65-5,29.36-3.23,44.57,3.81,32.67,11.49,64.23,24.91,94.27,9.3,20.81,20.72,40.33,38.81,54.95,11.48,9.28,24.54,14.64,39.32,17.03,20.08,3.24,40.35,6.37,59.33,14.27,20.15,8.39,39.7,18.1,56.71,31.96,6.38,5.2,12.13,11.56,12.63,20.72.27,4.95-1.49,9.01-4.87,12.64-8.94,9.6-20.54,14.72-32.45,19.01-33.49,12.07-64.21,15.88-100.94,15.85Z"/>
+          </g>
+        </g>
+      </svg>
+    </a>
+  </div>
+
+<div class="flip-container">
+  <div class="flip-card">
+    <!-- Frente de la tarjeta -->
+    <div class="left-container">
+      <h1 class="heading">Maitena</h1>
+      <span class="separator">~</span>
+      <p class="intro">I am Maitena, a student of 3D Animation, Games, and Interactive Environments. I would be delighted to undertake an internship at Fortiche, an animation studio that I greatly admire for its hybrid style and aesthetic. I possess knowledge of Adobe applications and im currently learning tools such as Maya, ZBrush, Substance Painter, and Unreal Engine 5. I am up to learn french if necessary. I would appreciate guidance on the steps to take in order to access this opportunity and work at Fortiche, which would be a dream come true.</p>
+    </div>
+
+    <!-- Parte trasera de la tarjeta -->
+    <div class="right-container">
+      <div class="meta">
+        <div class="text">
+          <p><span>Maitena</span><span>Gil Alvarez</span></p>
+          <p><span>From -</span><span>Spain</span></p>
+        </div>
+        <div class="featured-image">
+          <a target="_blank" href="letter.html" style="size: 30px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.89 595.28" width="100" height="100">
+              <g>
+                <g id="Layer_1">
+                    <path style="fill: #31234d;" class="cls-1" d="M603.17,512.91c-21.62,1.04-47.06-4.88-72.36-11.75-28.12-7.63-56.35-9.28-84.82-1.72-11.91,3.16-22.53,9.09-33.23,14.82-30.12,16.12-62.58,23.06-96.33,25.5-29.02,2.1-57.52-1.03-85.8-7.34-17.96-4.01-35.25-10.05-52.06-17.36-17.87-7.77-35.4-16.28-51.94-26.72-7.96-5.03-15.09-10.98-21.33-17.96-10.85-12.13-9.49-24.27,3.9-35.38,9.86-8.18,21.42-13.43,33.1-18.34,23.09-9.69,46.89-17.2,71.23-23.04,2.59-.62,5.14-1.4,7.71-2.11,13.5-3.73,21.99-11.68,25-26.06,7.33-35.06,13.64-70.3,20.44-105.46,4.55-23.53,8.7-47.16,16.64-69.92,9.32-26.69,26.99-46.18,50.38-61.3,24.75-16,49.36-32.23,72.31-50.8,15.67-12.68,30.84-25.97,45.48-39.8,19.16-18.11,42.08-22.8,67.1-19.75,30.69,3.74,56.13,17.75,78.49,39.19,34.08,32.66,51.76,73.19,58.58,118.66,3.96,26.43-5.92,49.77-23.74,69.58-15.4,17.11-35.1,23.93-57.64,23.79-1.16,0-2.34-.03-3.49-.22-2.68-.43-5.44-1.05-6.52-3.9-1.06-2.8,1.02-4.72,2.64-6.58,5.61-6.45,12.07-12.19,19.19-16.67,19.99-12.57,26.02-31.72,27.48-53.65,1.02-15.28-6.47-25.54-18.73-32.71-23.7-13.85-52.51-9.11-71.1,11.13-5.43,5.91-8.98,12.88-10.8,20.59-3.47,14.65-5,29.36-3.23,44.57,3.81,32.67,11.49,64.23,24.91,94.27,9.3,20.81,20.72,40.33,38.81,54.95,11.48,9.28,24.54,14.64,39.32,17.03,20.08,3.24,40.35,6.37,59.33,14.27,20.15,8.39,39.7,18.1,56.71,31.96,6.38,5.2,12.13,11.56,12.63,20.72.27,4.95-1.49,9.01-4.87,12.64-8.94,9.6-20.54,14.72-32.45,19.01-33.49,12.07-64.21,15.88-100.94,15.85Z"/>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>    
+      <div class="content scroll-box">
+        <p>H<small class="lead">ello, good morning,</small><br>
+            I am Maitena, and I am writing to express my interest in undertaking an internship at Fortiche, your renowned animation studio. I would like to inquire about the level of expertise required to access this exceptional opportunity.
+            <br><br>
+        As a Spanish student pursuing a two-year degree in 3D Animation, Games, and Interactive Environments, 
+        I am currently learning to animate in 3D and 2D, model, rigging, motion graphics, lighting, shading, drawing, design, and games development from scratch. My primary interests at present lie in 3D animation and hard surface modeling; I have also begun to develop an interest in rigging and texturing, although 
+        my current knowledge is still at a basic level. I am presently more inclined towards 3D animation.
+        <br><br>
+        Academically, I come from a background in Graphic Design, where I successfully completed a three-month internship abroad at Wavebreak Media, located in Cork, Ireland. This experience provided me with 
+        a valuable insight into the working environment of a medium-sized company.
+        <br><br>
+        On a personal level, I have always been passionate about storytelling; as a child, I viewed animation 
+        as something magical, and when I discovered that I could work in this industry and make others feel the same way, I decided that this would be my personal future. I am particularly fond of your studio's hybrid animation style, which combines 2D and 3D animation; I admire the aesthetic of all your projects, including the style 
+        of Arcane, the promotional videos for Valorant and LoL, and the shorts featuring Rocket and Groot.
+        Working at your company would be a dream come true, and I am writing to inquire about the necessary steps to access this opportunity.
+        <br><br>
+        I possess knowledge of all Adobe applications, including Photoshop, Illustrator, After Effects, Premiere Pro, InDesign, and Acrobat. I am also learning Maya, ZBrush, Unreal Engine 5, Substance Painter, and Blender.
+        <br><br>
+        I hope the consideration of my application for this exceptional opportunity. I am up to learn french if necessary. Please do not hesitate to contact me if you have any questions, comments, or requests, if you would like to schedule a meeting.
+        <br><br>
+        Thank you for your time and attention. ♥<br>
+        Have a fantastic day, Maitena.</p>
+      </div>
+      <p class="pagination">Maitena Gil Alvarez</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
